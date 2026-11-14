@@ -1,0 +1,13 @@
+{
+  "answers": {
+    "role": "1",
+    "tools": "1",
+    "site": "https://example.org/",
+    "stage": "2",
+    "geography": "Italia, italiano",
+    "priority": "3",
+    "content_volume": "1",
+    "budget": "1"
+  },
+  "env_names": []
+}

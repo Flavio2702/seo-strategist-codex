@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seo-strategist-codex"
+version = "0.1.0"
+description = "Audit SEO trasparenti e procedure strategiche assistite da Codex"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{name = "Flavio2702"}]
+dependencies = []
+
+[project.optional-dependencies]
+browser = ["playwright>=1.49,<2"]
+
+[project.scripts]
+seo-strategist = "seo_strategist.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["seo_strategist*"]

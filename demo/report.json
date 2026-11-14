@@ -1,0 +1,931 @@
+{
+  "schema_version": 1,
+  "scope": "sample",
+  "requested_url": "https://demo.example.invalid/",
+  "sample": {
+    "selected": [
+      "https://demo.example.invalid/",
+      "https://demo.example.invalid/article",
+      "https://demo.example.invalid/old",
+      "https://demo.example.invalid/private",
+      "https://demo.example.invalid/missing"
+    ],
+    "available_candidates": 5,
+    "limit": 10,
+    "selection": "URL iniziale, poi ordine sitemap"
+  },
+  "resources": {
+    "robots": {
+      "requested_url": "https://demo.example.invalid/robots.txt",
+      "final_url": "https://demo.example.invalid/robots.txt",
+      "status": 200,
+      "state": "present",
+      "headers": {
+        "content-type": "text/plain"
+      },
+      "redirects": [],
+      "attempts": 1,
+      "error": null
+    },
+    "llms": {
+      "requested_url": "https://demo.example.invalid/llms.txt",
+      "final_url": "https://demo.example.invalid/llms.txt",
+      "status": 200,
+      "state": "present",
+      "headers": {
+        "content-type": "text/plain"
+      },
+      "redirects": [],
+      "attempts": 1,
+      "error": null
+    },
+    "llms_quality": {
+      "state": "observed",
+      "experimental": true,
+      "checks": {
+        "h1": true,
+        "summary": true,
+        "sections": true,
+        "markdown_links": true,
+        "not_html": true
+      },
+      "note": "Indicatori di struttura della proposta llms.txt v2; qualità semantica e utilizzo non verificati."
+    },
+    "sitemap": {
+      "entries": [
+        {
+          "url": "https://demo.example.invalid/",
+          "lastmod": "2025-01-10",
+          "issues": []
+        },
+        {
+          "url": "https://demo.example.invalid/article",
+          "lastmod": "2025-01-10",
+          "issues": []
+        },
+        {
+          "url": "https://demo.example.invalid/old",
+          "lastmod": "2025-01-10",
+          "issues": []
+        },
+        {
+          "url": "https://demo.example.invalid/private",
+          "lastmod": "2025-01-10",
+          "issues": []
+        },
+        {
+          "url": "https://demo.example.invalid/missing",
+          "lastmod": "2025-01-10",
+          "issues": []
+        }
+      ],
+      "checks": [
+        {
+          "requested_url": "https://demo.example.invalid/sitemap.xml",
+          "final_url": "https://demo.example.invalid/sitemap.xml",
+          "status": 200,
+          "state": "present",
+          "headers": {
+            "content-type": "application/xml"
+          },
+          "redirects": [],
+          "attempts": 1,
+          "error": null
+        },
+        {
+          "requested_url": "https://demo.example.invalid/pages.xml",
+          "final_url": "https://demo.example.invalid/pages.xml",
+          "status": 200,
+          "state": "present",
+          "headers": {
+            "content-type": "application/xml"
+          },
+          "redirects": [],
+          "attempts": 1,
+          "error": null
+        }
+      ],
+      "warnings": [],
+      "complete": true,
+      "limits": {
+        "documents": 10,
+        "depth": 3,
+        "urls": 1000
+      }
+    },
+    "declared_sitemaps": [
+      "https://demo.example.invalid/sitemap.xml"
+    ],
+    "host_variants": [],
+    "variant_note": "Solo varianti esplicitamente richieste; URL iniziale e finale sempre conservati."
+  },
+  "pages": [
+    {
+      "http": {
+        "requested_url": "https://demo.example.invalid/",
+        "final_url": "https://demo.example.invalid/",
+        "status": 200,
+        "state": "present",
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "redirects": [],
+        "attempts": 1,
+        "error": null
+      },
+      "initial": {
+        "title": "Laboratorio SEO sintetico",
+        "descriptions": [
+          "Pagina dimostrativa di un audit locale."
+        ],
+        "headings": [
+          {
+            "level": 1,
+            "text": "Laboratorio"
+          }
+        ],
+        "text": "Laboratorio clicca qui Guida sintetica Dati inventati per verificare il funzionamento del software.",
+        "images": [
+          {
+            "src": "/photo.png",
+            "alt": null,
+            "decorative_candidate": false
+          }
+        ],
+        "canonical": [
+          "https://demo.example.invalid/"
+        ],
+        "robots": [],
+        "hreflang": [],
+        "jsonld": [],
+        "jsonld_errors": [],
+        "links": [
+          {
+            "href": "/old",
+            "text": "clicca qui",
+            "rel": "",
+            "url": "https://demo.example.invalid/old",
+            "navigable": true,
+            "generic_anchor": true
+          },
+          {
+            "href": "/article",
+            "text": "Guida sintetica",
+            "rel": "",
+            "url": "https://demo.example.invalid/article",
+            "navigable": true,
+            "generic_anchor": false
+          }
+        ],
+        "dates": [],
+        "script_count": 0,
+        "geo": {
+          "signals": {
+            "headings": true,
+            "question_headings": false,
+            "citation_markup": false,
+            "date_markup": false,
+            "lists": false,
+            "structured_data": false
+          },
+          "heuristic_score": 1,
+          "scale": "0–6, euristica interna; non misura citazioni o ranking",
+          "evidence": "observed_markup",
+          "limitations": "Citazioni, date e JSON-LD rilevati non sono verificati quanto a verità o qualità."
+        }
+      },
+      "rendering": {
+        "state": "off"
+      },
+      "rendered": null,
+      "schema_validation": [],
+      "matrix": {
+        "requested_url": "https://demo.example.invalid/",
+        "final_url": "https://demo.example.invalid/",
+        "http_status": 200,
+        "redirects": [],
+        "noindex": false,
+        "robots_directives": [
+          ""
+        ],
+        "canonical": [
+          "https://demo.example.invalid/"
+        ],
+        "in_sitemap": true,
+        "indexability": "potentially_indexable_not_verified"
+      },
+      "ai_crawlers": [
+        {
+          "agent": "GPTBot",
+          "url": "https://demo.example.invalid/",
+          "declared_access": true,
+          "state": "declared",
+          "actual_use": "Non deducibile: accesso, indicizzazione e citazioni non verificati.",
+          "reason": "no_matching_rule"
+        },
+        {
+          "agent": "OAI-SearchBot",
+          "url": "https://demo.example.invalid/",
+          "declared_access": true,
+          "state": "declared",
+          "actual_use": "Non deducibile: accesso, indicizzazione e citazioni non verificati.",
+          "reason": "/"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "/old",
+          "text": "clicca qui",
+          "rel": "",
+          "url": "https://demo.example.invalid/old",
+          "navigable": true,
+          "generic_anchor": true,
+          "known_noncanonical_target": true
+        },
+        {
+          "href": "/article",
+          "text": "Guida sintetica",
+          "rel": "",
+          "url": "https://demo.example.invalid/article",
+          "navigable": true,
+          "generic_anchor": false,
+          "known_noncanonical_target": false
+        }
+      ]
+    },
+    {
+      "http": {
+        "requested_url": "https://demo.example.invalid/article",
+        "final_url": "https://demo.example.invalid/article",
+        "status": 200,
+        "state": "present",
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "redirects": [],
+        "attempts": 1,
+        "error": null
+      },
+      "initial": {
+        "title": "Guida sintetica alla ricerca",
+        "descriptions": [],
+        "headings": [
+          {
+            "level": 1,
+            "text": "Come verificare le fonti?"
+          }
+        ],
+        "text": "Come verificare le fonti? Leggi la fonte primaria Fonte dimostrativa 10 gennaio",
+        "images": [],
+        "canonical": [
+          "https://demo.example.invalid/article"
+        ],
+        "robots": [],
+        "hreflang": [],
+        "jsonld": [
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Guida sintetica",
+            "author": {
+              "@type": "Person",
+              "name": "Autore di esempio"
+            }
+          }
+        ],
+        "jsonld_errors": [],
+        "links": [],
+        "dates": [
+          "2025-01-10"
+        ],
+        "script_count": 1,
+        "geo": {
+          "signals": {
+            "headings": true,
+            "question_headings": true,
+            "citation_markup": true,
+            "date_markup": true,
+            "lists": true,
+            "structured_data": true
+          },
+          "heuristic_score": 6,
+          "scale": "0–6, euristica interna; non misura citazioni o ranking",
+          "evidence": "observed_markup",
+          "limitations": "Citazioni, date e JSON-LD rilevati non sono verificati quanto a verità o qualità."
+        }
+      },
+      "rendering": {
+        "state": "off"
+      },
+      "rendered": null,
+      "schema_validation": [
+        {
+          "valid_local_contract": true,
+          "errors": [],
+          "scope": "Campi e coerenza locali; non validazione completa Schema.org, autenticità rating o idoneità Google."
+        }
+      ],
+      "matrix": {
+        "requested_url": "https://demo.example.invalid/article",
+        "final_url": "https://demo.example.invalid/article",
+        "http_status": 200,
+        "redirects": [],
+        "noindex": false,
+        "robots_directives": [
+          ""
+        ],
+        "canonical": [
+          "https://demo.example.invalid/article"
+        ],
+        "in_sitemap": true,
+        "indexability": "potentially_indexable_not_verified"
+      },
+      "ai_crawlers": [
+        {
+          "agent": "GPTBot",
+          "url": "https://demo.example.invalid/article",
+          "declared_access": true,
+          "state": "declared",
+          "actual_use": "Non deducibile: accesso, indicizzazione e citazioni non verificati.",
+          "reason": "no_matching_rule"
+        },
+        {
+          "agent": "OAI-SearchBot",
+          "url": "https://demo.example.invalid/article",
+          "declared_access": true,
+          "state": "declared",
+          "actual_use": "Non deducibile: accesso, indicizzazione e citazioni non verificati.",
+          "reason": "/"
+        }
+      ],
+      "internal_links": []
+    },
+    {
+      "http": {
+        "requested_url": "https://demo.example.invalid/old",
+        "final_url": "https://demo.example.invalid/article",
+        "status": 200,
+        "state": "present",
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "redirects": [
+          {
+            "from": "https://demo.example.invalid/old",
+            "to": "https://demo.example.invalid/article",
+            "status": 301
+          }
+        ],
+        "attempts": 2,
+        "error": null
+      },
+      "initial": {
+        "title": "Guida sintetica alla ricerca",
+        "descriptions": [],
+        "headings": [
+          {
+            "level": 1,
+            "text": "Come verificare le fonti?"
+          }
+        ],
+        "text": "Come verificare le fonti? Leggi la fonte primaria Fonte dimostrativa 10 gennaio",
+        "images": [],
+        "canonical": [
+          "https://demo.example.invalid/article"
+        ],
+        "robots": [],
+        "hreflang": [],
+        "jsonld": [
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Guida sintetica",
+            "author": {
+              "@type": "Person",
+              "name": "Autore di esempio"
+            }
+          }
+        ],
+        "jsonld_errors": [],
+        "links": [],
+        "dates": [
+          "2025-01-10"
+        ],
+        "script_count": 1,
+        "geo": {
+          "signals": {
+            "headings": true,
+            "question_headings": true,
+            "citation_markup": true,
+            "date_markup": true,
+            "lists": true,
+            "structured_data": true
+          },
+          "heuristic_score": 6,
+          "scale": "0–6, euristica interna; non misura citazioni o ranking",
+          "evidence": "observed_markup",
+          "limitations": "Citazioni, date e JSON-LD rilevati non sono verificati quanto a verità o qualità."
+        }
+      },
+      "rendering": {
+        "state": "off"
+      },
+      "rendered": null,
+      "schema_validation": [
+        {
+          "valid_local_contract": true,
+          "errors": [],
+          "scope": "Campi e coerenza locali; non validazione completa Schema.org, autenticità rating o idoneità Google."
+        }
+      ],
+      "matrix": {
+        "requested_url": "https://demo.example.invalid/old",
+        "final_url": "https://demo.example.invalid/article",
+        "http_status": 200,
+        "redirects": [
+          {
+            "from": "https://demo.example.invalid/old",
+            "to": "https://demo.example.invalid/article",
+            "status": 301
+          }
+        ],
+        "noindex": false,
+        "robots_directives": [
+          ""
+        ],
+        "canonical": [
+          "https://demo.example.invalid/article"
+        ],
+        "in_sitemap": true,
+        "indexability": "potentially_indexable_not_verified"
+      },
+      "ai_crawlers": [
+        {
+          "agent": "GPTBot",
+          "url": "https://demo.example.invalid/article",
+          "declared_access": true,
+          "state": "declared",
+          "actual_use": "Non deducibile: accesso, indicizzazione e citazioni non verificati.",
+          "reason": "no_matching_rule"
+        },
+        {
+          "agent": "OAI-SearchBot",
+          "url": "https://demo.example.invalid/article",
+          "declared_access": true,
+          "state": "declared",
+          "actual_use": "Non deducibile: accesso, indicizzazione e citazioni non verificati.",
+          "reason": "/"
+        }
+      ],
+      "internal_links": []
+    },
+    {
+      "http": {
+        "requested_url": "https://demo.example.invalid/private",
+        "final_url": "https://demo.example.invalid/private",
+        "status": 200,
+        "state": "present",
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "redirects": [],
+        "attempts": 1,
+        "error": null
+      },
+      "initial": {
+        "title": "",
+        "descriptions": [],
+        "headings": [
+          {
+            "level": 2,
+            "text": "Pagina riservata dimostrativa"
+          }
+        ],
+        "text": "Pagina riservata dimostrativa",
+        "images": [],
+        "canonical": [
+          "https://demo.example.invalid/article"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "value": "noindex"
+          }
+        ],
+        "hreflang": [],
+        "jsonld": [],
+        "jsonld_errors": [],
+        "links": [],
+        "dates": [],
+        "script_count": 0,
+        "geo": {
+          "signals": {
+            "headings": true,
+            "question_headings": false,
+            "citation_markup": false,
+            "date_markup": false,
+            "lists": false,
+            "structured_data": false
+          },
+          "heuristic_score": 1,
+          "scale": "0–6, euristica interna; non misura citazioni o ranking",
+          "evidence": "observed_markup",
+          "limitations": "Citazioni, date e JSON-LD rilevati non sono verificati quanto a verità o qualità."
+        }
+      },
+      "rendering": {
+        "state": "off"
+      },
+      "rendered": null,
+      "schema_validation": [],
+      "matrix": {
+        "requested_url": "https://demo.example.invalid/private",
+        "final_url": "https://demo.example.invalid/private",
+        "http_status": 200,
+        "redirects": [],
+        "noindex": true,
+        "robots_directives": [
+          "noindex",
+          ""
+        ],
+        "canonical": [
+          "https://demo.example.invalid/article"
+        ],
+        "in_sitemap": true,
+        "indexability": "noindex_observed"
+      },
+      "ai_crawlers": [
+        {
+          "agent": "GPTBot",
+          "url": "https://demo.example.invalid/private",
+          "declared_access": false,
+          "state": "declared",
+          "actual_use": "Non deducibile: accesso, indicizzazione e citazioni non verificati.",
+          "reason": "/private"
+        },
+        {
+          "agent": "OAI-SearchBot",
+          "url": "https://demo.example.invalid/private",
+          "declared_access": true,
+          "state": "declared",
+          "actual_use": "Non deducibile: accesso, indicizzazione e citazioni non verificati.",
+          "reason": "/"
+        }
+      ],
+      "internal_links": []
+    },
+    {
+      "http": {
+        "requested_url": "https://demo.example.invalid/missing",
+        "final_url": "https://demo.example.invalid/missing",
+        "status": 404,
+        "state": "absent",
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "redirects": [],
+        "attempts": 1,
+        "error": null
+      },
+      "initial": null,
+      "rendering": {
+        "state": "off"
+      },
+      "rendered": null,
+      "matrix": {
+        "requested_url": "https://demo.example.invalid/missing",
+        "final_url": "https://demo.example.invalid/missing",
+        "http_status": 404,
+        "redirects": [],
+        "noindex": null,
+        "robots_directives": [
+          ""
+        ],
+        "canonical": [],
+        "in_sitemap": true,
+        "indexability": "inconclusive"
+      },
+      "ai_crawlers": [
+        {
+          "agent": "GPTBot",
+          "url": "https://demo.example.invalid/missing",
+          "declared_access": true,
+          "state": "declared",
+          "actual_use": "Non deducibile: accesso, indicizzazione e citazioni non verificati.",
+          "reason": "no_matching_rule"
+        },
+        {
+          "agent": "OAI-SearchBot",
+          "url": "https://demo.example.invalid/missing",
+          "declared_access": true,
+          "state": "declared",
+          "actual_use": "Non deducibile: accesso, indicizzazione e citazioni non verificati.",
+          "reason": "/"
+        }
+      ],
+      "internal_links": []
+    }
+  ],
+  "findings": [
+    {
+      "code": "description_editorial_review",
+      "url": "https://demo.example.invalid/",
+      "priority": 3,
+      "reason": "Description fuori fascia editoriale interna 50–170; non limite Google",
+      "evidence": "heuristic",
+      "dependencies": [],
+      "missing_data": []
+    },
+    {
+      "code": "missing_alt",
+      "url": "https://demo.example.invalid/",
+      "priority": 2,
+      "reason": "Immagini senza attributo alt; verificare funzione e contenuto",
+      "evidence": "observed",
+      "dependencies": [],
+      "missing_data": []
+    },
+    {
+      "code": "missing_description",
+      "url": "https://demo.example.invalid/article",
+      "priority": 3,
+      "reason": "Meta description assente; snippet effettivo non verificato",
+      "evidence": "observed",
+      "dependencies": [],
+      "missing_data": []
+    },
+    {
+      "code": "missing_description",
+      "url": "https://demo.example.invalid/old",
+      "priority": 3,
+      "reason": "Meta description assente; snippet effettivo non verificato",
+      "evidence": "observed",
+      "dependencies": [],
+      "missing_data": []
+    },
+    {
+      "code": "missing_title",
+      "url": "https://demo.example.invalid/private",
+      "priority": 2,
+      "reason": "Title assente nell'HTML iniziale",
+      "evidence": "observed",
+      "dependencies": [],
+      "missing_data": []
+    },
+    {
+      "code": "missing_description",
+      "url": "https://demo.example.invalid/private",
+      "priority": 3,
+      "reason": "Meta description assente; snippet effettivo non verificato",
+      "evidence": "observed",
+      "dependencies": [],
+      "missing_data": []
+    },
+    {
+      "code": "missing_h1",
+      "url": "https://demo.example.invalid/private",
+      "priority": 3,
+      "reason": "Nessun H1 rilevato",
+      "evidence": "observed",
+      "dependencies": [],
+      "missing_data": []
+    },
+    {
+      "code": "noindex_review",
+      "url": "https://demo.example.invalid/private",
+      "priority": 1,
+      "reason": "Direttiva noindex osservata; verificare intenzione prima di modificarla",
+      "evidence": "observed",
+      "dependencies": [
+        "Conferma obiettivo di indicizzazione"
+      ],
+      "missing_data": []
+    },
+    {
+      "code": "canonical_other",
+      "url": "https://demo.example.invalid/private",
+      "priority": 2,
+      "reason": "Canonical dichiarato diverso dall'URL finale; scelta Google non verificata",
+      "evidence": "observed",
+      "dependencies": [
+        "Verifica equivalenza contenuti"
+      ],
+      "missing_data": []
+    },
+    {
+      "code": "page_unavailable",
+      "url": "https://demo.example.invalid/missing",
+      "priority": 1,
+      "reason": "Pagina non analizzabile come HTML",
+      "evidence": "observed",
+      "dependencies": [],
+      "missing_data": [
+        "HTML analizzabile"
+      ]
+    },
+    {
+      "code": "internal_noncanonical",
+      "url": "https://demo.example.invalid/",
+      "priority": 2,
+      "reason": "Link a un target non canonico noto nel campione",
+      "evidence": "sample_observation",
+      "dependencies": [],
+      "missing_data": []
+    }
+  ],
+  "roadmap": [
+    {
+      "code": "noindex_review",
+      "priority": 1,
+      "reason": "Direttiva noindex osservata; verificare intenzione prima di modificarla",
+      "urls": [
+        "https://demo.example.invalid/private"
+      ],
+      "evidence": "observed",
+      "dependencies": [
+        "Conferma obiettivo di indicizzazione"
+      ],
+      "missing_data": []
+    },
+    {
+      "code": "page_unavailable",
+      "priority": 1,
+      "reason": "Pagina non analizzabile come HTML",
+      "urls": [
+        "https://demo.example.invalid/missing"
+      ],
+      "evidence": "observed",
+      "dependencies": [],
+      "missing_data": [
+        "HTML analizzabile"
+      ]
+    },
+    {
+      "code": "canonical_other",
+      "priority": 2,
+      "reason": "Canonical dichiarato diverso dall'URL finale; scelta Google non verificata",
+      "urls": [
+        "https://demo.example.invalid/private"
+      ],
+      "evidence": "observed",
+      "dependencies": [
+        "Verifica equivalenza contenuti"
+      ],
+      "missing_data": []
+    },
+    {
+      "code": "internal_noncanonical",
+      "priority": 2,
+      "reason": "Link a un target non canonico noto nel campione",
+      "urls": [
+        "https://demo.example.invalid/"
+      ],
+      "evidence": "sample_observation",
+      "dependencies": [],
+      "missing_data": []
+    },
+    {
+      "code": "missing_alt",
+      "priority": 2,
+      "reason": "Immagini senza attributo alt; verificare funzione e contenuto",
+      "urls": [
+        "https://demo.example.invalid/"
+      ],
+      "evidence": "observed",
+      "dependencies": [],
+      "missing_data": []
+    },
+    {
+      "code": "missing_title",
+      "priority": 2,
+      "reason": "Title assente nell'HTML iniziale",
+      "urls": [
+        "https://demo.example.invalid/private"
+      ],
+      "evidence": "observed",
+      "dependencies": [],
+      "missing_data": []
+    },
+    {
+      "code": "description_editorial_review",
+      "priority": 3,
+      "reason": "Description fuori fascia editoriale interna 50–170; non limite Google",
+      "urls": [
+        "https://demo.example.invalid/"
+      ],
+      "evidence": "heuristic",
+      "dependencies": [],
+      "missing_data": []
+    },
+    {
+      "code": "missing_description",
+      "priority": 3,
+      "reason": "Meta description assente; snippet effettivo non verificato",
+      "urls": [
+        "https://demo.example.invalid/article",
+        "https://demo.example.invalid/old",
+        "https://demo.example.invalid/private"
+      ],
+      "evidence": "observed",
+      "dependencies": [],
+      "missing_data": []
+    },
+    {
+      "code": "missing_h1",
+      "priority": 3,
+      "reason": "Nessun H1 rilevato",
+      "urls": [
+        "https://demo.example.invalid/private"
+      ],
+      "evidence": "observed",
+      "dependencies": [],
+      "missing_data": []
+    }
+  ],
+  "limitations": [
+    "Risultati limitati al campione",
+    "Nessuna misura INP, ranking, traffico o citazioni AI",
+    "robots è una dichiarazione; utilizzo reale dei crawler non verificato",
+    "Nessuna analisi di competitor eseguita"
+  ],
+  "synthetic": true,
+  "demo_method": "HTTP reale su server sintetico loopback; origine sostituita da dominio riservato, header volatili rimossi. Rendering off.",
+  "keyword_example": {
+    "clusters": [
+      {
+        "id": 1,
+        "seed_tokens": [
+          "comprare",
+          "rosse",
+          "scarpe"
+        ],
+        "keywords": [
+          {
+            "keyword": "comprare scarpe rosse",
+            "intent": "transactional",
+            "evidence": "rule_based_inference",
+            "opportunity": "specifica_da_validare",
+            "volume": null,
+            "difficulty": null
+          },
+          {
+            "keyword": "prezzo scarpe rosse",
+            "intent": "transactional",
+            "evidence": "rule_based_inference",
+            "opportunity": "specifica_da_validare",
+            "volume": null,
+            "difficulty": null
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seed_tokens": [
+          "scarpe",
+          "scegliere"
+        ],
+        "keywords": [
+          {
+            "keyword": "come scegliere scarpe",
+            "intent": "informational",
+            "evidence": "rule_based_inference",
+            "opportunity": "ampia_da_esplorare",
+            "volume": null,
+            "difficulty": null
+          }
+        ]
+      }
+    ],
+    "method": "Jaccard >= 0.5 rispetto al primo elemento del cluster; dipende dall'ordine di input. Intent per parole chiave, nessuna misura SERP.",
+    "missing_data": [
+      "volumi misurati",
+      "difficoltà misurata",
+      "SERP verificata"
+    ]
+  },
+  "brief_example": {
+    "status": "bozza_da_revisionare",
+    "topic": "Scelta delle scarpe",
+    "audience": "lettori di esempio",
+    "intent": "informational",
+    "working_title": "Scelta delle scarpe: guida per lettori di esempio",
+    "outline": [
+      "Problema del lettore e risposta iniziale",
+      "Concetti e criteri di scelta",
+      "Esempio verificabile",
+      "Limiti e prossimi passi"
+    ],
+    "evidence_supplied": [],
+    "competitor_analysis": "non_eseguita",
+    "requirements": [
+      "Verificare ogni dato e fonte",
+      "Aggiungere esperienza o esempi originali",
+      "Controllare che il titolo rispecchi il contenuto"
+    ],
+    "missing_data": [
+      "SERP corrente",
+      "differenziazione verificata",
+      "dati proprietari e revisione esperta"
+    ]
+  }
+}
